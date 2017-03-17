@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="untitled"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled">
+				<Option output="C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/untitled.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/include"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../include/c++/6.3.0"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../include/c++/6.3.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../include/c++/6.3.0/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled"/>
+					<CompileFile command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="untitled/fast">
+				<Option output="C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/untitled.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/include"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../include/c++/6.3.0"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../include/c++/6.3.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\users\rapha\downloads\mingw\bin\../lib/gcc/x86_64-w64-mingw32/6.3.0/../../../../include/c++/6.3.0/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled/fast"/>
+					<CompileFile command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Rapha/Downloads/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/AutoPlayer.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/AutoPlayer.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/BoardArray.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/BoardArray.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Brain.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Brain.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/ColorManagement.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Game.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Game.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Move.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Move.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Play.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Play.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Player.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/Player.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/RandomBrain.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/RuleBook.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/RuleBook.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/main.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Rapha/CLionProjects/untitled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
