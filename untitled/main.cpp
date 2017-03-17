@@ -35,14 +35,14 @@ int main()
 
 
 ///// Game
-//    AutoPlayer whitePlayer = AutoPlayer();
-//    AutoPlayer blackPlayer = AutoPlayer();
-//
-//    Game game = Game((Player *) &whitePlayer, (Player *) &blackPlayer);
-//
-//    game.log = true;
-//
-//    auto bb = game.startGame();
+    AutoPlayer whitePlayer = AutoPlayer();
+    AutoPlayer blackPlayer = AutoPlayer();
+
+    Game game = Game((Player *) &whitePlayer, (Player *) &blackPlayer);
+
+    game.log = true;
+
+    auto bb = game.startGame();
 
 /// Test
 
@@ -57,7 +57,7 @@ int main()
 //std::cout << ba.array_to_code() << std::endl;
 
 
-std::cout << std::exp(0) << std::endl;
+//std::cout << std::exp(0) << std::endl;
 
 ///Debug
 

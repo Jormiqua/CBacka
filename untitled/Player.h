@@ -15,7 +15,7 @@ class Player
 private:
     Colors playerColor;
 public:
-    virtual std::pair<Play, float> pickBestPlay(BoardArray ba, std::vector<Play>, Colors playerColor )= 0;
+    virtual std::pair<Play, float> pickBestPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays)= 0;
     virtual Colors getColor();
     virtual void setColor(Colors);
 };

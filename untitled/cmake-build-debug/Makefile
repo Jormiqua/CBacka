@@ -284,6 +284,33 @@ Move.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Move.cpp.s
 .PHONY : Move.cpp.s
 
+NeuralNetwork.obj: NeuralNetwork.cpp.obj
+
+.PHONY : NeuralNetwork.obj
+
+# target to build an object file
+NeuralNetwork.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj
+.PHONY : NeuralNetwork.cpp.obj
+
+NeuralNetwork.i: NeuralNetwork.cpp.i
+
+.PHONY : NeuralNetwork.i
+
+# target to preprocess a source file
+NeuralNetwork.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/NeuralNetwork.cpp.i
+.PHONY : NeuralNetwork.cpp.i
+
+NeuralNetwork.s: NeuralNetwork.cpp.s
+
+.PHONY : NeuralNetwork.s
+
+# target to generate assembly for a file
+NeuralNetwork.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/NeuralNetwork.cpp.s
+.PHONY : NeuralNetwork.cpp.s
+
 Play.obj: Play.cpp.obj
 
 .PHONY : Play.obj
@@ -419,6 +446,9 @@ help:
 	@echo ... Move.obj
 	@echo ... Move.i
 	@echo ... Move.s
+	@echo ... NeuralNetwork.obj
+	@echo ... NeuralNetwork.i
+	@echo ... NeuralNetwork.s
 	@echo ... Play.obj
 	@echo ... Play.i
 	@echo ... Play.s

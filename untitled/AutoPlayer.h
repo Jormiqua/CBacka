@@ -11,7 +11,7 @@
 class AutoPlayer : Player
 {
 public:
-    virtual std::pair<Play, float> pickBestPlay(BoardArray ba, std::vector<Play>, Colors playerColor);
+    virtual std::pair<Play, float> pickBestPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays);
     Brain brain;
 };
 

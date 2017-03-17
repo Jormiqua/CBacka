@@ -176,33 +176,9 @@ CMakeFiles/untitled.dir/RuleBook.cpp.obj.provides: CMakeFiles/untitled.dir/RuleB
 CMakeFiles/untitled.dir/RuleBook.cpp.obj.provides.build: CMakeFiles/untitled.dir/RuleBook.cpp.obj
 
 
-CMakeFiles/untitled.dir/Brain.cpp.obj: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/Brain.cpp.obj: ../Brain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/Brain.cpp.obj"
-	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Brain.cpp.obj -c C:\Users\Rapha\CLionProjects\untitled\Brain.cpp
-
-CMakeFiles/untitled.dir/Brain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Brain.cpp.i"
-	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rapha\CLionProjects\untitled\Brain.cpp > CMakeFiles\untitled.dir\Brain.cpp.i
-
-CMakeFiles/untitled.dir/Brain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Brain.cpp.s"
-	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rapha\CLionProjects\untitled\Brain.cpp -o CMakeFiles\untitled.dir\Brain.cpp.s
-
-CMakeFiles/untitled.dir/Brain.cpp.obj.requires:
-
-.PHONY : CMakeFiles/untitled.dir/Brain.cpp.obj.requires
-
-CMakeFiles/untitled.dir/Brain.cpp.obj.provides: CMakeFiles/untitled.dir/Brain.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Brain.cpp.obj.provides.build
-.PHONY : CMakeFiles/untitled.dir/Brain.cpp.obj.provides
-
-CMakeFiles/untitled.dir/Brain.cpp.obj.provides.build: CMakeFiles/untitled.dir/Brain.cpp.obj
-
-
 CMakeFiles/untitled.dir/Play.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Play.cpp.obj: ../Play.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled.dir/Play.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/Play.cpp.obj"
 	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Play.cpp.obj -c C:\Users\Rapha\CLionProjects\untitled\Play.cpp
 
 CMakeFiles/untitled.dir/Play.cpp.i: cmake_force
@@ -226,7 +202,7 @@ CMakeFiles/untitled.dir/Play.cpp.obj.provides.build: CMakeFiles/untitled.dir/Pla
 
 CMakeFiles/untitled.dir/AutoPlayer.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/AutoPlayer.cpp.obj: ../AutoPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled.dir/AutoPlayer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled.dir/AutoPlayer.cpp.obj"
 	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\AutoPlayer.cpp.obj -c C:\Users\Rapha\CLionProjects\untitled\AutoPlayer.cpp
 
 CMakeFiles/untitled.dir/AutoPlayer.cpp.i: cmake_force
@@ -250,7 +226,7 @@ CMakeFiles/untitled.dir/AutoPlayer.cpp.obj.provides.build: CMakeFiles/untitled.d
 
 CMakeFiles/untitled.dir/Game.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Game.cpp.obj: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled.dir/Game.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled.dir/Game.cpp.obj"
 	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Game.cpp.obj -c C:\Users\Rapha\CLionProjects\untitled\Game.cpp
 
 CMakeFiles/untitled.dir/Game.cpp.i: cmake_force
@@ -274,7 +250,7 @@ CMakeFiles/untitled.dir/Game.cpp.obj.provides.build: CMakeFiles/untitled.dir/Gam
 
 CMakeFiles/untitled.dir/Player.cpp.obj: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/Player.cpp.obj: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled.dir/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled.dir/Player.cpp.obj"
 	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Player.cpp.obj -c C:\Users\Rapha\CLionProjects\untitled\Player.cpp
 
 CMakeFiles/untitled.dir/Player.cpp.i: cmake_force
@@ -296,6 +272,54 @@ CMakeFiles/untitled.dir/Player.cpp.obj.provides: CMakeFiles/untitled.dir/Player.
 CMakeFiles/untitled.dir/Player.cpp.obj.provides.build: CMakeFiles/untitled.dir/Player.cpp.obj
 
 
+CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj: ../NeuralNetwork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj"
+	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\NeuralNetwork.cpp.obj -c C:\Users\Rapha\CLionProjects\untitled\NeuralNetwork.cpp
+
+CMakeFiles/untitled.dir/NeuralNetwork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/NeuralNetwork.cpp.i"
+	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rapha\CLionProjects\untitled\NeuralNetwork.cpp > CMakeFiles\untitled.dir\NeuralNetwork.cpp.i
+
+CMakeFiles/untitled.dir/NeuralNetwork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/NeuralNetwork.cpp.s"
+	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rapha\CLionProjects\untitled\NeuralNetwork.cpp -o CMakeFiles\untitled.dir\NeuralNetwork.cpp.s
+
+CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.requires:
+
+.PHONY : CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.requires
+
+CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.provides: CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.provides.build
+.PHONY : CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.provides
+
+CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.provides.build: CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj
+
+
+CMakeFiles/untitled.dir/Brain.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/Brain.cpp.obj: ../Brain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled.dir/Brain.cpp.obj"
+	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\untitled.dir\Brain.cpp.obj -c C:\Users\Rapha\CLionProjects\untitled\Brain.cpp
+
+CMakeFiles/untitled.dir/Brain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Brain.cpp.i"
+	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rapha\CLionProjects\untitled\Brain.cpp > CMakeFiles\untitled.dir\Brain.cpp.i
+
+CMakeFiles/untitled.dir/Brain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Brain.cpp.s"
+	C:\Users\Rapha\Downloads\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rapha\CLionProjects\untitled\Brain.cpp -o CMakeFiles\untitled.dir\Brain.cpp.s
+
+CMakeFiles/untitled.dir/Brain.cpp.obj.requires:
+
+.PHONY : CMakeFiles/untitled.dir/Brain.cpp.obj.requires
+
+CMakeFiles/untitled.dir/Brain.cpp.obj.provides: CMakeFiles/untitled.dir/Brain.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/Brain.cpp.obj.provides.build
+.PHONY : CMakeFiles/untitled.dir/Brain.cpp.obj.provides
+
+CMakeFiles/untitled.dir/Brain.cpp.obj.provides.build: CMakeFiles/untitled.dir/Brain.cpp.obj
+
+
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/main.cpp.obj" \
@@ -303,11 +327,12 @@ untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/ColorManagement.cpp.obj" \
 "CMakeFiles/untitled.dir/Move.cpp.obj" \
 "CMakeFiles/untitled.dir/RuleBook.cpp.obj" \
-"CMakeFiles/untitled.dir/Brain.cpp.obj" \
 "CMakeFiles/untitled.dir/Play.cpp.obj" \
 "CMakeFiles/untitled.dir/AutoPlayer.cpp.obj" \
 "CMakeFiles/untitled.dir/Game.cpp.obj" \
-"CMakeFiles/untitled.dir/Player.cpp.obj"
+"CMakeFiles/untitled.dir/Player.cpp.obj" \
+"CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj" \
+"CMakeFiles/untitled.dir/Brain.cpp.obj"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -317,16 +342,17 @@ untitled.exe: CMakeFiles/untitled.dir/BoardArray.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/ColorManagement.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/Move.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/RuleBook.cpp.obj
-untitled.exe: CMakeFiles/untitled.dir/Brain.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/Play.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/AutoPlayer.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/Game.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/Player.cpp.obj
+untitled.exe: CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj
+untitled.exe: CMakeFiles/untitled.dir/Brain.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/build.make
 untitled.exe: CMakeFiles/untitled.dir/linklibs.rsp
 untitled.exe: CMakeFiles/untitled.dir/objects1.rsp
 untitled.exe: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable untitled.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rapha\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable untitled.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -339,11 +365,12 @@ CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/BoardArray.cpp.obj.req
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/ColorManagement.cpp.obj.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/Move.cpp.obj.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/RuleBook.cpp.obj.requires
-CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/Brain.cpp.obj.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/Play.cpp.obj.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/AutoPlayer.cpp.obj.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/Game.cpp.obj.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/Player.cpp.obj.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/Brain.cpp.obj.requires
 
 .PHONY : CMakeFiles/untitled.dir/requires
 

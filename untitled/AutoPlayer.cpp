@@ -4,7 +4,7 @@
 
 #include "AutoPlayer.h"
 
-std::pair<Play, float> AutoPlayer::pickBestPlay(BoardArray ba, std::vector<Play> plays, Colors playerColor)
+std::pair<Play, float> AutoPlayer::pickBestPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays)
 {
     float min_score_for_other_player = 1;
     Play best_play = Play();

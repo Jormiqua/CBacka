@@ -10,8 +10,8 @@
 #include <array>
 #include "Move.h"
 #include "BoardArray.h"
-#include "Brain.h"
 #include "Play.h"
+#include "ColorManagement.h"
 
 class RuleBook
 {

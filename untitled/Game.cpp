@@ -23,7 +23,8 @@ std::tuple<Colors, int, std::vector<BoardArray>> Game::startGame()
         numberOfTurn++;
         Colors activeColor = activePlayer->getColor();
         auto dices = diceGenerator();
-        auto playAndScore = activePlayer->pickBestPlay(ba, RuleBook::getAllLegalPlays(ba, dices, activeColor), activeColor);
+        auto playAndScore = activePlayer->pickBestPlay(ba, activeColor,
+                                                       RuleBook::getAllLegalPlays(ba, dices, activeColor));
         ba = ba.playPlay(playAndScore.first);
 
         if (this->log)

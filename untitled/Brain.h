@@ -1,62 +1,27 @@
 //
-// Created by Raphael on 3/11/2017.
+// Created by Raphael on 3/17/2017.
 //
 
 #ifndef UNTITLED_BRAIN_H
 #define UNTITLED_BRAIN_H
 
 
+#include <array>
 #include "BoardArray.h"
 #include "ColorManagement.h"
+#include "NeuralNetwork.h"
 
 class Brain
 {
+
 private:
-    void updateGrads();
-    void updateAArray(float *);
-    std::vector<int> computeValueForArrayInput(int numberOfToken, int position, Colors color);
-    void updateArrayOfInputsFromVectorOfValueUpdate(std::vector<int> updateValues, int * inputArray);
-    void setColorPlaying(Colors color, int * inputArray);
-
+    void turnBoardIntoInput(BoardArray ba, Colors playerColor, float* input);
 public:
-/// Gloabal variable
-    virtual float scoreBoard(BoardArray ba, Colors willPlayColor);
-    static const int numberOfInputs = 2;
-    static const int numberOfNodes = 2;
-    float alpha;
-    float lambda;
+    float getScore(BoardArray ba, Colors playerColor);
+    static const inputSize = 26 * 4 * 2 + 2;
+    NeuralNetwork NN;
+    std::pair<Play, float> pickPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays);
 
-/// Temp variables
-    float weights_1 [numberOfNodes][numberOfInputs];
-    float weights_2 [numberOfNodes + 1];
-
-    float grads_1 [numberOfNodes][numberOfInputs] = {0};
-    float grads_2 [numberOfInputs + 1 ] = {0};
-
-    float A [numberOfNodes + 1];
-    static const int arrayInputSize = 26 * 4 * 2 + 2;
-    std::array<int, arrayInputSize> arrayInput;
-
-/// Constructor
-    Brain(int numberOfInputs, int numberOfNodes);
-    void initializeWeights();
-    void initializeInput(BoardArray ba, Colors playerColor, int* inputs);
-
-/// Utils
-    float sigmoid(float x);
-    float dsigmoid(float x);
-
-
-/// Scoring
-    float updateAndGoThrought();
-    float simpleRunFromBoard(BoardArray ba);
-    float simpleRunFromPlay(Play play);
-
-/// Learning
-    void updateWeights();
-    void updateArrayInput(Play play);
-
-    float runScoreBoard();
 };
 
 

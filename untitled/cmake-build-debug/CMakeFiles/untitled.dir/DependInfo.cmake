@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Rapha/CLionProjects/untitled/ColorManagement.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/ColorManagement.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/Game.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Game.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/Move.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Move.cpp.obj"
+  "C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/Play.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Play.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/Player.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Player.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/RuleBook.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/RuleBook.cpp.obj"

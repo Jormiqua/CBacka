@@ -67,16 +67,18 @@ Play.h
 C:/Users/Rapha/CLionProjects/untitled/Play.h
 
 C:/Users/Rapha/CLionProjects/untitled/Brain.cpp
-cmath
--
 Brain.h
 C:/Users/Rapha/CLionProjects/untitled/Brain.h
 
 C:/Users/Rapha/CLionProjects/untitled/Brain.h
+array
+-
 BoardArray.h
 C:/Users/Rapha/CLionProjects/untitled/BoardArray.h
 ColorManagement.h
 C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h
+NeuralNetwork.h
+C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.h
 
 C:/Users/Rapha/CLionProjects/untitled/ColorManagement.cpp
 ColorManagement.h
@@ -111,6 +113,18 @@ ColorManagement.h
 C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h
 
 C:/Users/Rapha/CLionProjects/untitled/Move.h
+
+C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.cpp
+cmath
+-
+utility
+-
+cstdlib
+-
+NeuralNetwork.h
+C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.h
+
+C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.h
 
 C:/Users/Rapha/CLionProjects/untitled/Play.cpp
 iostream
@@ -157,10 +171,10 @@ Move.h
 C:/Users/Rapha/CLionProjects/untitled/Move.h
 BoardArray.h
 C:/Users/Rapha/CLionProjects/untitled/BoardArray.h
-Brain.h
-C:/Users/Rapha/CLionProjects/untitled/Brain.h
 Play.h
 C:/Users/Rapha/CLionProjects/untitled/Play.h
+ColorManagement.h
+C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h
 
 C:/Users/Rapha/CLionProjects/untitled/main.cpp
 iostream

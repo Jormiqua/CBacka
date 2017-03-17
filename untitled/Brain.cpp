@@ -1,139 +1,60 @@
 //
-// Created by Raphael on 3/11/2017.
+// Created by Raphael on 3/17/2017.
 //
 
-#include <cmath>
-#include <array>
 #include "Brain.h"
 
-float Brain::scoreBoard(BoardArray ba, Colors willPlayColor)
+void Brain::turnBoardIntoInput(BoardArray ba, Colors playerColor, float *input)
 {
-    return (float) (rand() / double(RAND_MAX));
-}
-
-Brain::Brain(int numberOfInputs, int numberOfNodes)
-{
-    initializeWeights();
-}
-
-
-
-void Brain::initializeWeights()
-{
-    for (int i = 0; i < numberOfNodes; i ++)
+    int counter = 0;
+    for (int column = 0; column <= 1; column ++)
     {
-        for (int j = 0; j < numberOfInputs; j++)
+        for (int threshold = 0; threshold <4; threshold++)
         {
-            weights_1[i][j] = (float) ((float) (rand() / double(RAND_MAX) - 0.5) * 0.4);
+            for (int position = 0; position < ba.array_lenght[0]; position++)
+            {
+                if (threshold != 3)
+                    input[counter] = (int) ba.get_value(position, column) > threshold;
+
+                if (threshold == 3)
+                    input[counter] = max(((float)(ba.get_value(position, column) - 3) / 2), 0);
+
+                counter++;
+            }
         }
     }
 
-    for (int j = 0; j < numberOfInputs + 1; j++)
-    {
-        weights_2[j] =  (float) ((float) (rand() / double(RAND_MAX) - 0.5) * 0.4);
-    }
-
+    input[counter] = playerColor == Colors::WHITE;
+    input[counter + 1] = playerColor == Colors::BLACK;
 
 }
 
-void Brain::updateGrads()
+float Brain::getScore(BoardArray ba, Colors playerColor)
 {
-    float score = runScoreBoard();
-    for (int i = 0; i < numberOfNodes; i ++)
+    float **input;
+    turnBoardIntoInput(ba, playerColor, *input);
+    return NN.computeScore(*input);
+}
+
+std::pair<Play, float> Brain::pickPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays)
+{
+    float probabilityOfVictory = -1;
+    Play bestPlay;
+    float probabilityOfVictoryIfPlay;
+    BoardArray futureBoard;
+
+    for (int i = 0; i < plays.size(); i++)
     {
-        for (int j = 0; j < numberOfInputs; j++)
+        futureBoard = ba.playPlay(plays[i]);
+        probabilityOfVictoryIfPlay = 1 - getScore(futureBoard, ColorManagement::otherColor(playerColor));
+
+        if (probabilityOfVictory < probabilityOfVictoryIfPlay)
         {
-            weights_1[i][j] = score * ( 1 - score) * A[i] * (1 - A[i]) * arrayInput[j] * weights_2[i];
+            probabilityOfVictory = probabilityOfVictoryIfPlay;
+            bestPlay = plays[i];
         }
     }
 
-    for (int j = 0; j < numberOfInputs + 1; j++)
-    {
-        weights_2[j] =  score * (1 - score) * A[j];
-    }
-
+    return std::pair(bestPlay, probabilityOfVictoryIfPlay);
 }
 
-float Brain::sigmoid(float x)
-{
-    return  1 / (1 + std::exp(-1 * x));
-}
-
-float Brain::dsigmoid(float x)
-{
-    return  sigmoid(x) * (1 - sigmoid(x));
-}
-
-void Brain::updateAArray(float * AArray)
-{
-    float sum = 0;
-    for (int i = 0; i < numberOfNodes; i++)
-    {
-        sum = 0;
-        for (int j = 0; j < numberOfInputs; j++)
-        {
-            sum += weights_1[i][j] * arrayInput[j];
-        }
-
-        AArray[i] = sigmoid(sum);
-    }
-    AArray[numberOfNodes] = 1;
-}
-
-void Brain::updateA()
-{
-    updateAArray(A);
-}
-
-std::vector<int> Brain::computeValueForArrayInput(int numberOfToken, int position, Colors color)
-{
-    std::vector<int> vector1;
-
-    int color_addition = color == Colors::WHITE ? 0 : 104;
-
-    for (int i = 1; i <= 3; i++)
-    {
-        vector1.push_back(position % 26 + (i - 1) * 26 + color_addition);
-        vector1.push_back((int) numberOfToken >= i);
-    }
-
-    vector1.push_back(position % 26 + 3 * 26 + color_addition);
-    vector1.push_back(max((float) 0, ((float) (numberOfToken - 3) / 2)));
-}
-
-float Brain::runScoreBoard()
-{
-    //TODO: REMAKE THE FUNCTION UPDATE A TO TAKE A POINTER
-}
-
-void Brain::initializeInput(BoardArray ba, Colors playerColor, int* inputs)
-{
-    std::vector<int> to_update;
-    for (int i = 0; i < ba.array_lenght[0]; i++)
-    {
-        updateArrayOfInputsFromVectorOfValueUpdate(computeValueForArrayInput(ba.get_value(i, ColorManagement::column(Colors::WHITE)), i, Colors::WHITE), inputs);
-        updateArrayOfInputsFromVectorOfValueUpdate(computeValueForArrayInput(ba.get_value(i, ColorManagement::column(Colors::BLACK)), i, Colors::BLACK), inputs);
-        setColorPlaying(playerColor, inputs);
-    }
-
-}
-
-void Brain::updateArrayOfInputsFromVectorOfValueUpdate(std::vector<int> updateValues, int *inputArray)
-{
-    for (int i = 0; i < updateValues.size(); i = i + 2)
-    {
-        inputArray[updateValues[i]] = updateValues[i + 1];
-    }
-}
-
-void Brain::setColorPlaying(Colors color, int *inputArray)
-{
-    color == Colors::WHITE ? inputArray[208] = 1: inputArray[208] = 0;
-    inputArray[209] = 1 - inputArray[208];
-}
-
-float Brain::simpleRunFromPlay(Play play)
-{
-    std::array<int, arrayInputSize> newInput = arrayInput;
-
-}
