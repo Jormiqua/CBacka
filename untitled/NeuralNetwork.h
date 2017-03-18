@@ -10,16 +10,17 @@ class NeuralNetwork
 {
 public:
 
-    NeuralNetwork(const int numberOfInputs, const int numberOfNodes);
+//    NeuralNetwork(const int numberOfInputs, const int numberOfNodes);
+//    virtual ~NeuralNetwork();
 
-    virtual ~NeuralNetwork();
+    NeuralNetwork();
 
     void initializeWeights();
 
-    const int numberOfInputs;
-    const int numberOfNodes ;
-    float weights_1;
-    float weights_2;
+    static const int numberOfInputs = 26 * 4 * 2 + 2;
+    static const int numberOfNodes = 100;
+    float weights_1[numberOfNodes][numberOfInputs];
+    float weights_2[numberOfNodes + 1];
 
     void computeA(float *input, float *A);
 

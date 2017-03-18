@@ -17,7 +17,7 @@ void Brain::turnBoardIntoInput(BoardArray ba, Colors playerColor, float *input)
                     input[counter] = (int) ba.get_value(position, column) > threshold;
 
                 if (threshold == 3)
-                    input[counter] = max(((float)(ba.get_value(position, column) - 3) / 2), 0);
+                    input[counter] = max(((float)(ba.get_value(position, column) - 3) / 2), (float) 0);
 
                 counter++;
             }
@@ -36,7 +36,7 @@ float Brain::getScore(BoardArray ba, Colors playerColor)
     return NN.computeScore(*input);
 }
 
-std::pair<Play, float> Brain::pickPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays)
+std::pair<Play, float> Brain::pickBestPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays)
 {
     float probabilityOfVictory = -1;
     Play bestPlay;
@@ -55,6 +55,6 @@ std::pair<Play, float> Brain::pickPlay(BoardArray ba, Colors playerColor, std::v
         }
     }
 
-    return std::pair(bestPlay, probabilityOfVictoryIfPlay);
+    return std::make_pair(bestPlay, probabilityOfVictoryIfPlay);
 }
 

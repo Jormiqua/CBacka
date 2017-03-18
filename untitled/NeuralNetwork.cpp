@@ -12,22 +12,22 @@
 void NeuralNetwork::computeA(float *input, float *A)
 {
     float sum = 0;
-    for (int i = 0; i < numberOfNodes; i++)
+    for (int i = 0; i < this->numberOfNodes; i++)
     {
         sum = 0;
-        for (int j = 0; j < numberOfInputs; j++)
+        for (int j = 0; j < this->numberOfInputs; j++)
         {
             sum += weights_1[i][j] * input[j];
         }
 
         A[i] = sigmoid(sum);
     }
-    A[numberOfNodes] = 1;
+    A[this->numberOfNodes] = 1;
 }
 
 float NeuralNetwork::computeScore(float *input)
 {
-    float A [numberOfNodes + 1];
+    float A [this->numberOfNodes + 1];
     computeA(input, A);
     return  computeScore(input, A);
 
@@ -83,15 +83,30 @@ float NeuralNetwork::sigmoid(float x)
     return  1 / (1 + std::exp(-1 * x));
 }
 
-/// Construction
-NeuralNetwork::NeuralNetwork(const int numberOfInputs, const int numberOfNodes) : numberOfInputs(numberOfInputs),
-                                                                                  numberOfNodes(numberOfNodes)
+
+NeuralNetwork::NeuralNetwork()
 {
-    initializeWeights();
-    float *weights_1 = new float[numberOfNodes][numberOfInputs];
-    float *weights_2 = new float[numberOfNodes + 1];
+ initializeWeights();
 }
 
+//NeuralNetwork::~NeuralNetwork()
+
+//}
+//    delete weights_2;
+//    delete weights_1
+//{
+/// Construction
+// NeuralNetwork::NeuralNetwork(int numberOfInputs, int numberOfNodes): numberOfInputs(numberOfInputs), numberOfNodes(numberOfNodes)
+//{
+//    weights_1 = new float[numberOfNodes][numberOfInputs];
+//    int** weights_1 = new int*[numberOfInputs];
+//    for(int i = 0; i < numberOfInputs; ++i)
+//        weights_1[i] = new int[numberOfNodes];
+//
+//    weights_2 = new float[numberOfNodes + 1];
+//    initializeWeights();
+//
+//}
 void NeuralNetwork::initializeWeights()
 {
     for (int i = 0; i < numberOfNodes; i ++)
@@ -106,10 +121,4 @@ void NeuralNetwork::initializeWeights()
     {
         weights_2[j] =  (float) ((float) (rand() / double(RAND_MAX) - 0.5) * 0.4);
     }
-}
-
-NeuralNetwork::~NeuralNetwork()
-{
-    delete weights_1
-    delete weights_2;
 }

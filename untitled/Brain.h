@@ -18,9 +18,8 @@ private:
     void turnBoardIntoInput(BoardArray ba, Colors playerColor, float* input);
 public:
     float getScore(BoardArray ba, Colors playerColor);
-    static const inputSize = 26 * 4 * 2 + 2;
     NeuralNetwork NN;
-    std::pair<Play, float> pickPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays);
+    std::pair<Play, float> pickBestPlay(BoardArray ba, Colors playerColor, std::vector<Play> plays);
 
 };
 

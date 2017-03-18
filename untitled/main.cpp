@@ -73,7 +73,7 @@ int main()
 //
 //std::cout << "Picked play" << std::endl;
 //AutoPlayer player;
-//auto playAndScore = player.pickBestPlay(ba, RuleBook::getAllLegalPlays(ba, dices, Colors::WHITE), Colors::WHITE);
+//auto playAndScore = player.play(ba, RuleBook::getAllLegalPlays(ba, dices, Colors::WHITE), Colors::WHITE);
 //playAndScore.first.print();
 
 
