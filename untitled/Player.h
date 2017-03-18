@@ -16,8 +16,8 @@ private:
     Colors playerColor;
 public:
     virtual std::pair<Play, float> play(BoardArray ba, Colors playerColor, std::vector<Play> plays)= 0;
-    virtual Colors getColor();
-    virtual void setColor(Colors);
+    Colors getColor();
+    void setColor(Colors);
 };
 
 #endif //UNTITLED_PLAYER_H
