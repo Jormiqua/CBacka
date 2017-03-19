@@ -7,6 +7,7 @@
 
 
 #include "Player.h"
+#include "AutoPlayer.h"
 
 class Game
 {

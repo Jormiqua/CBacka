@@ -8,7 +8,7 @@
 #include "Player.h"
 #include "Brain.h"
 
-class AutoPlayer : Player
+class AutoPlayer :  public Player
 {
 public:
     virtual std::pair<Play, float> play(BoardArray ba, Colors playerColor, std::vector<Play> plays);
