@@ -59,8 +59,10 @@ CMakeFiles/untitled.dir/Play.cpp.obj: ../Play.h
 
 CMakeFiles/untitled.dir/Player.cpp.obj: C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
 CMakeFiles/untitled.dir/Player.cpp.obj: ../BoardArray.h
+CMakeFiles/untitled.dir/Player.cpp.obj: ../Brain.h
 CMakeFiles/untitled.dir/Player.cpp.obj: ../ColorManagement.h
 CMakeFiles/untitled.dir/Player.cpp.obj: ../Move.h
+CMakeFiles/untitled.dir/Player.cpp.obj: ../NeuralNetwork.h
 CMakeFiles/untitled.dir/Player.cpp.obj: ../Play.h
 CMakeFiles/untitled.dir/Player.cpp.obj: ../Player.cpp
 CMakeFiles/untitled.dir/Player.cpp.obj: ../Player.h

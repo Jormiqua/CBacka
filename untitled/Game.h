@@ -15,8 +15,8 @@ public:
     Game(Player *playerWhite, Player *playerBlack);
     std::string diceToString(std::vector<int>, Colors color);
 
-    Player *playerWhite;
-    Player *playerBlack;
+    Player *playerWhite = 0;
+    Player *playerBlack = 0;
     BoardArray ba;
     bool log;
 

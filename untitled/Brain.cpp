@@ -58,3 +58,8 @@ std::pair<Play, float> Brain::pickBestPlay(BoardArray ba, Colors playerColor, st
     return std::make_pair(bestPlay, probabilityOfVictoryIfPlay);
 }
 
+std::string Brain::whatAmI()
+{
+    return "A basic brain";
+}
+

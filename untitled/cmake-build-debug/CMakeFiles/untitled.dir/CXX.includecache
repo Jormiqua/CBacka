@@ -41,6 +41,8 @@ bits/basic_string.tcc
 -
 
 C:/Users/Rapha/CLionProjects/untitled/AutoPlayer.cpp
+iostream
+-
 AutoPlayer.h
 C:/Users/Rapha/CLionProjects/untitled/AutoPlayer.h
 
@@ -155,6 +157,8 @@ ColorManagement.h
 C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h
 BoardArray.h
 C:/Users/Rapha/CLionProjects/untitled/BoardArray.h
+Brain.h
+C:/Users/Rapha/CLionProjects/untitled/Brain.h
 
 C:/Users/Rapha/CLionProjects/untitled/RuleBook.cpp
 algorithm

@@ -9,15 +9,19 @@
 #include "Play.h"
 #include "ColorManagement.h"
 #include "BoardArray.h"
+#include "Brain.h"
 
 class Player
 {
 private:
     Colors playerColor;
 public:
-    virtual std::pair<Play, float> play(BoardArray ba, Colors playerColor, std::vector<Play> plays)= 0;
+    virtual std::pair<Play, float> play(BoardArray ba, Colors playerColor, std::vector<Play> plays) = 0;
     Colors getColor();
     void setColor(Colors);
+    virtual std::string whatAmI();
+    Brain brain = RandomBrain();
+    Brain getBrain();
 };
 
 #endif //UNTITLED_PLAYER_H

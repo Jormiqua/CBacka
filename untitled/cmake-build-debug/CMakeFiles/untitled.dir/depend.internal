@@ -60,8 +60,10 @@ CMakeFiles/untitled.dir/Play.cpp.obj
 CMakeFiles/untitled.dir/Player.cpp.obj
  C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
  C:/Users/Rapha/CLionProjects/untitled/BoardArray.h
+ C:/Users/Rapha/CLionProjects/untitled/Brain.h
  C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h
  C:/Users/Rapha/CLionProjects/untitled/Move.h
+ C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.h
  C:/Users/Rapha/CLionProjects/untitled/Play.h
  C:/Users/Rapha/CLionProjects/untitled/Player.cpp
  C:/Users/Rapha/CLionProjects/untitled/Player.h

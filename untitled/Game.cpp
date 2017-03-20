@@ -13,6 +13,7 @@ std::tuple<Colors, int, std::vector<BoardArray>> Game::startGame()
 {
 
     int numberOfTurn = 0;
+    playerWhite->whatAmI();
     bool gameIsOver = false;
     Player *activePlayer = playerWhite;
     std::vector<BoardArray> boards;
@@ -23,7 +24,8 @@ std::tuple<Colors, int, std::vector<BoardArray>> Game::startGame()
         numberOfTurn++;
         Colors activeColor = activePlayer->getColor();
         auto dices = diceGenerator();
-        std::pair<Play, float> playAndScore = activePlayer->play(ba, activeColor, RuleBook::getAllLegalPlays(ba, dices, activeColor));
+        std::vector<Play> plays = RuleBook::getAllLegalPlays(ba, dices, activeColor);
+        std::pair<Play, float> playAndScore = activePlayer->play(ba, activeColor, plays);
         ba = ba.playPlay(playAndScore.first);
 
         if (this->log)

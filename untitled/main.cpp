@@ -35,12 +35,22 @@ int main()
 
 
 ///// Game
-    AutoPlayer whitePlayer = AutoPlayer();
-    AutoPlayer blackPlayer = AutoPlayer();
+    NeuralNetwork NN = NeuralNetwork();
+    Brain b = Brain();
+    RandomBrain rb = RandomBrain();
 
-    Game game = Game((Player *) &whitePlayer, (Player *) &blackPlayer);
+    AutoPlayer whitePlayer = AutoPlayer();
+    whitePlayer.brain = RandomBrain();
+
+    AutoPlayer blackPlayer = AutoPlayer();
+    whitePlayer.brain = RandomBrain();
+
+    Game game = Game(&whitePlayer, &blackPlayer);
 
     game.log = true;
+
+    game.playerBlack->whatAmI();
+    game.playerWhite->whatAmI();
 
     auto bb = game.startGame();
 
@@ -76,6 +86,53 @@ int main()
 //auto playAndScore = player.play(ba, RuleBook::getAllLegalPlays(ba, dices, Colors::WHITE), Colors::WHITE);
 //playAndScore.first.print();
 
+return 0;
 
-    return 0;
-}
+};
+
+// ****************************************
+
+//
+///// Test segmentation error
+//
+//class Parent
+//{
+//public:
+//    virtual void foo() = 0;
+//};
+//
+//class Child: public Parent
+//{
+//    virtual void foo()
+//    {
+//        std::cout<<"Child call"<<std::endl;
+//    }
+//};
+//
+//class ClassRoom
+//{
+//
+//public:
+//    Parent *p1;
+//    Parent *p2;
+//    ClassRoom(Parent *p1, Parent *p2): p1(p1), p2(p2) {};
+//    void someFunction()
+//        {
+//            p1->foo();
+//            p2->foo();
+//        }
+//};
+//
+//int main()
+//{
+//
+//Child c1 = Child();
+//Child c2 = Child();
+//
+//ClassRoom classRoom = ClassRoom(&c1, &c2);
+//
+//classRoom.someFunction();
+//
+//return 0;
+//
+//};

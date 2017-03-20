@@ -13,3 +13,13 @@ void Player::setColor(Colors color)
 {
     playerColor = color;
 }
+
+string Player::whatAmI()
+{
+    return "A base player";
+}
+
+Brain Player::getBrain()
+{
+    return Brain();
+}
