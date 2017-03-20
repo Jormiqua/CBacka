@@ -2,9 +2,7 @@
 // Created by Raphael on 3/10/2017.
 //
 
-#ifndef UNTITLED_COLOR_H
-#define UNTITLED_COLOR_H
-
+#pragma once
 #include "../../../../MinGW/lib/gcc/mingw32/5.3.0/include/c++/string"
 
 enum class Colors {WHITE, BLACK};
@@ -23,4 +21,3 @@ public:
     static Colors otherColor(Colors colors);
 };
 
-#endif //UNTITLED_COLOR_H

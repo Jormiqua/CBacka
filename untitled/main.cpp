@@ -36,20 +36,61 @@ int main()
 
 
 ///// Game
+//    NeuralNetwork NN = NeuralNetwork();
+//
+////    AutoPlayer playerWhite1 = AutoPlayer();
+////    AutoPlayer playerBlack1 = AutoPlayer();
+//
+//    AutoPlayer* playerWhite1 = new AutoPlayer();
+//    AutoPlayer* playerBlack1 = new AutoPlayer();
+//
+//
+//
+//    std::cout << playerWhite1->whatAmI() << std::endl;
+//    std::cout << playerBlack1->whatAmI() << std::endl;
+//
+//    BGame bgame = BGame(playerWhite1, playerBlack1);
+//
+//    std::cout << "Black" << std::endl;
+//    std::cout << bgame.playerBlack->whatAmI() << std::endl;
+//    std::cout << "White" << std::endl;
+//    std::cout << bgame.playerWhite->whatAmI() << std::endl;
+
+//    delete playerBlack1;
+//    delete playerWhite1;
+
     NeuralNetwork NN = NeuralNetwork();
 
-    AutoPlayer playerWhite1 = AutoPlayer();
-    AutoPlayer playerBlack1 = AutoPlayer();
+    AutoPlayer* playerWhite1 = new AutoPlayer();
+    AutoPlayer* playerBlack1 = new AutoPlayer();
 
-    std::cout << playerWhite1.whatAmI() << std::endl;
-    std::cout << playerBlack1.whatAmI() << std::endl;
+    std::cout << playerWhite1->whatAmI() << std::endl;
+    std::cout << playerBlack1->whatAmI() << std::endl;
 
-    BGame bgame = BGame(&playerWhite1, &playerBlack1);
+    BGame bgame = BGame(playerWhite1, playerBlack1);
 
     std::cout << "Black" << std::endl;
     std::cout << bgame.playerBlack->whatAmI() << std::endl;
     std::cout << "White" << std::endl;
     std::cout << bgame.playerWhite->whatAmI() << std::endl;
+
+    delete playerBlack1;
+    delete playerWhite1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //    Game game = Game(&playerWhite, &playerBlack);

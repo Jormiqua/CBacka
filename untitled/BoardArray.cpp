@@ -9,7 +9,7 @@
 void BoardArray::print()
 {
 
-    std::cout << "This array is " + std::to_string(sizeof(this->array)) + " long " << std::endl;
+    std::cout << "This tokensArray is " + std::to_string(sizeof(this->tokensArray)) + " long " << std::endl;
 
     for (int i = 0; i < this->array_lenght[0]; i++ )
     {
@@ -34,22 +34,22 @@ void BoardArray::move_token_to_jail(int position, int column)
 
 void BoardArray::set_value(int position, int column, int value)
 {
-    this->array[position][column] = value;
+    this->tokensArray[position][column] = value;
 }
 
 int BoardArray::get_value(int position, int column)
 {
-    return this->array[position][column];
+    return this->tokensArray[position][column];
 }
 
 void BoardArray::remove_one_token(int position, int column)
 {
-    this->array[position][column] --;
+    this->tokensArray[position][column] --;
 }
 
 void BoardArray::add_one_token(int position, int column)
 {
-    this->array[position][column] ++;
+    this->tokensArray[position][column] ++;
 }
 
 void BoardArray::print_line(int position)
@@ -57,7 +57,7 @@ void BoardArray::print_line(int position)
     std::string allignement_char = "  ";
     if (position > 9)
         allignement_char = " ";
-    std::cout << "Line " + std::to_string(position) + allignement_char + " :  [" + std::to_string(this->array[position][0]) + ", " + std::to_string(this->array[position][1]) + "]"   << std::endl;
+    std::cout << "Line " + std::to_string(position) + allignement_char + " :  [" + std::to_string(this->tokensArray[position][0]) + ", " + std::to_string(this->tokensArray[position][1]) + "]"   << std::endl;
 
 }
 
@@ -133,19 +133,19 @@ bool BoardArray::gameIsOver(int column)
 
 int* BoardArray::getArray()
 {
-    return *(this->array);
+    return *(this->tokensArray);
 }
 
 void BoardArray::initializeArray()
 {
-    this->array[1][0] = 2;
-    this->array[6][1] = 5;
-    this->array[8][1] = 3;
-    this->array[12][0] = 5;
-    this->array[13][1] = 5;
-    this->array[17][0] = 3;
-    this->array[19][0] = 5;
-    this->array[24][1] = 2;
+    this->tokensArray[1][0] = 2;
+    this->tokensArray[6][1] = 5;
+    this->tokensArray[8][1] = 3;
+    this->tokensArray[12][0] = 5;
+    this->tokensArray[13][1] = 5;
+    this->tokensArray[17][0] = 3;
+    this->tokensArray[19][0] = 5;
+    this->tokensArray[24][1] = 2;
 }
 
 std::string BoardArray::array_to_code()
@@ -156,7 +156,7 @@ std::string BoardArray::array_to_code()
     {
         for (int j = 0; j < 2; j++)
         {
-            string = string + to_hex(array[i][j]);
+            string = string + to_hex(tokensArray[i][j]);
         }
 
         string = string + "_";

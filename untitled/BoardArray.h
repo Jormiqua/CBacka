@@ -13,7 +13,7 @@
 class BoardArray
 {
 private:
-    int array [26][2] = {0};
+    int tokensArray [26][2] = {0};
 public:
     int* getArray();
     void print();
