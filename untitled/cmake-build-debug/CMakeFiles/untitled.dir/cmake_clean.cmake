@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/Player.cpp.obj"
   "CMakeFiles/untitled.dir/NeuralNetwork.cpp.obj"
   "CMakeFiles/untitled.dir/Brain.cpp.obj"
+  "CMakeFiles/untitled.dir/BGame.cpp.obj"
   "untitled.pdb"
   "untitled.exe"
   "untitled.exe.manifest"

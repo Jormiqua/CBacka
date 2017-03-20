@@ -12,6 +12,17 @@ CMakeFiles/untitled.dir/AutoPlayer.cpp.obj
  C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.h
  C:/Users/Rapha/CLionProjects/untitled/Play.h
  C:/Users/Rapha/CLionProjects/untitled/Player.h
+CMakeFiles/untitled.dir/BGame.cpp.obj
+ C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
+ C:/Users/Rapha/CLionProjects/untitled/BGame.cpp
+ C:/Users/Rapha/CLionProjects/untitled/BGame.h
+ C:/Users/Rapha/CLionProjects/untitled/BoardArray.h
+ C:/Users/Rapha/CLionProjects/untitled/Brain.h
+ C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h
+ C:/Users/Rapha/CLionProjects/untitled/Move.h
+ C:/Users/Rapha/CLionProjects/untitled/NeuralNetwork.h
+ C:/Users/Rapha/CLionProjects/untitled/Play.h
+ C:/Users/Rapha/CLionProjects/untitled/Player.h
 CMakeFiles/untitled.dir/BoardArray.cpp.obj
  C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
  C:/Users/Rapha/CLionProjects/untitled/BoardArray.cpp
@@ -78,6 +89,7 @@ CMakeFiles/untitled.dir/RuleBook.cpp.obj
 CMakeFiles/untitled.dir/main.cpp.obj
  C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
  C:/Users/Rapha/CLionProjects/untitled/AutoPlayer.h
+ C:/Users/Rapha/CLionProjects/untitled/BGame.h
  C:/Users/Rapha/CLionProjects/untitled/BoardArray.h
  C:/Users/Rapha/CLionProjects/untitled/Brain.h
  C:/Users/Rapha/CLionProjects/untitled/ColorManagement.h

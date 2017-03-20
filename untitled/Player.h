@@ -20,8 +20,7 @@ public:
     Colors getColor();
     void setColor(Colors);
     virtual std::string whatAmI();
-    Brain brain = RandomBrain();
-    Brain getBrain();
+    Brain brain;
 };
 
 #endif //UNTITLED_PLAYER_H

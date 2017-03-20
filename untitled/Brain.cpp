@@ -62,4 +62,3 @@ std::string Brain::whatAmI()
 {
     return "A basic brain";
 }
-

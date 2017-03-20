@@ -8,6 +8,7 @@
 #include "RuleBook.h"
 #include "AutoPlayer.h"
 #include "Game.h"
+#include "BGame.h"
 
 
 int main()
@@ -36,23 +37,29 @@ int main()
 
 ///// Game
     NeuralNetwork NN = NeuralNetwork();
-    Brain b = Brain();
-    RandomBrain rb = RandomBrain();
 
-    AutoPlayer whitePlayer = AutoPlayer();
-    whitePlayer.brain = RandomBrain();
+    AutoPlayer playerWhite1 = AutoPlayer();
+    AutoPlayer playerBlack1 = AutoPlayer();
 
-    AutoPlayer blackPlayer = AutoPlayer();
-    whitePlayer.brain = RandomBrain();
+    std::cout << playerWhite1.whatAmI() << std::endl;
+    std::cout << playerBlack1.whatAmI() << std::endl;
 
-    Game game = Game(&whitePlayer, &blackPlayer);
+    BGame bgame = BGame(&playerWhite1, &playerBlack1);
 
-    game.log = true;
+    std::cout << "Black" << std::endl;
+    std::cout << bgame.playerBlack->whatAmI() << std::endl;
+    std::cout << "White" << std::endl;
+    std::cout << bgame.playerWhite->whatAmI() << std::endl;
 
-    game.playerBlack->whatAmI();
-    game.playerWhite->whatAmI();
 
-    auto bb = game.startGame();
+//    Game game = Game(&playerWhite, &playerBlack);
+//
+//    game.log = true;
+
+//    game.playerBlack->whatAmI();
+//    game.playerWhite->whatAmI();
+//
+//    auto bb = game.startGame();
 
 /// Test
 

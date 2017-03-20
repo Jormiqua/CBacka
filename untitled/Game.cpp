@@ -93,5 +93,5 @@ Game::Game(Player *playerWhite, Player *playerBlack) : playerWhite(playerWhite),
     srand ((unsigned int) time(NULL));
     playerWhite->setColor(Colors::WHITE);
     playerBlack->setColor(Colors::BLACK);
-    this->ba.initializeArray();
+//    this->ba.initializeArray();
 }

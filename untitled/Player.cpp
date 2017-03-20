@@ -19,7 +19,7 @@ string Player::whatAmI()
     return "A base player";
 }
 
-Brain Player::getBrain()
-{
-    return Brain();
-}
+//Brain Player::getBrain()
+//{
+//    return Brain();
+//}

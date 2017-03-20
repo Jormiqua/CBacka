@@ -149,6 +149,33 @@ AutoPlayer.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/AutoPlayer.cpp.s
 .PHONY : AutoPlayer.cpp.s
 
+BGame.obj: BGame.cpp.obj
+
+.PHONY : BGame.obj
+
+# target to build an object file
+BGame.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/BGame.cpp.obj
+.PHONY : BGame.cpp.obj
+
+BGame.i: BGame.cpp.i
+
+.PHONY : BGame.i
+
+# target to preprocess a source file
+BGame.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/BGame.cpp.i
+.PHONY : BGame.cpp.i
+
+BGame.s: BGame.cpp.s
+
+.PHONY : BGame.s
+
+# target to generate assembly for a file
+BGame.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/BGame.cpp.s
+.PHONY : BGame.cpp.s
+
 BoardArray.obj: BoardArray.cpp.obj
 
 .PHONY : BoardArray.obj
@@ -431,6 +458,9 @@ help:
 	@echo ... AutoPlayer.obj
 	@echo ... AutoPlayer.i
 	@echo ... AutoPlayer.s
+	@echo ... BGame.obj
+	@echo ... BGame.i
+	@echo ... BGame.s
 	@echo ... BoardArray.obj
 	@echo ... BoardArray.i
 	@echo ... BoardArray.s

@@ -25,6 +25,7 @@ public:
 
 class RandomBrain : public Brain
 {
+public:
     float virtual getScore(BoardArray ba, Colors willPlayColor)
     {
         return (float) (rand() / double(RAND_MAX));

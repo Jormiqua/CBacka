@@ -14,6 +14,3 @@ std::string AutoPlayer::whatAmI()
 {
     return "A auto player";
 }
-
-//AutoPlayer::AutoPlayer(Brain brain) : brain(brain)
-//{}

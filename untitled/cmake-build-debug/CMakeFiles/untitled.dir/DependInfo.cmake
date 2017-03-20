@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Rapha/CLionProjects/untitled/AutoPlayer.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/AutoPlayer.cpp.obj"
+  "C:/Users/Rapha/CLionProjects/untitled/BGame.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/BGame.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/BoardArray.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/BoardArray.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/Brain.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/Brain.cpp.obj"
   "C:/Users/Rapha/CLionProjects/untitled/ColorManagement.cpp" "C:/Users/Rapha/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir/ColorManagement.cpp.obj"

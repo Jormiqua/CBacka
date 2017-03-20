@@ -13,7 +13,7 @@ class AutoPlayer :  public Player
 public:
     virtual std::pair<Play, float> play(BoardArray ba, Colors playerColor, std::vector<Play> plays);
     virtual std::string whatAmI();
-    Brain brain;
+    Brain brain = Brain();
 };
 
 

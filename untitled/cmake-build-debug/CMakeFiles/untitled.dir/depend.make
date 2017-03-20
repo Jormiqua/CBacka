@@ -12,6 +12,17 @@ CMakeFiles/untitled.dir/AutoPlayer.cpp.obj: ../NeuralNetwork.h
 CMakeFiles/untitled.dir/AutoPlayer.cpp.obj: ../Play.h
 CMakeFiles/untitled.dir/AutoPlayer.cpp.obj: ../Player.h
 
+CMakeFiles/untitled.dir/BGame.cpp.obj: C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../BGame.cpp
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../BGame.h
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../BoardArray.h
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../Brain.h
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../ColorManagement.h
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../Move.h
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../NeuralNetwork.h
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../Play.h
+CMakeFiles/untitled.dir/BGame.cpp.obj: ../Player.h
+
 CMakeFiles/untitled.dir/BoardArray.cpp.obj: C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
 CMakeFiles/untitled.dir/BoardArray.cpp.obj: ../BoardArray.cpp
 CMakeFiles/untitled.dir/BoardArray.cpp.obj: ../BoardArray.h
@@ -77,6 +88,7 @@ CMakeFiles/untitled.dir/RuleBook.cpp.obj: ../RuleBook.h
 
 CMakeFiles/untitled.dir/main.cpp.obj: C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++/string
 CMakeFiles/untitled.dir/main.cpp.obj: ../AutoPlayer.h
+CMakeFiles/untitled.dir/main.cpp.obj: ../BGame.h
 CMakeFiles/untitled.dir/main.cpp.obj: ../BoardArray.h
 CMakeFiles/untitled.dir/main.cpp.obj: ../Brain.h
 CMakeFiles/untitled.dir/main.cpp.obj: ../ColorManagement.h
